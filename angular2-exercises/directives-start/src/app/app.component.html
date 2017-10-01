@@ -27,7 +27,8 @@
       </ul>
       <ng-template [ngIf]="onlyOdd">
         <p appBasicHighlight>Only odd (basic directive)</p>
-        <p appBetterHighlight>Only odd (better directive)</p>
+        <p [appBetterHighlight]="'red'" [defaultColor]="'yellow'">Only odd (better directive)</p>
+        <!--or you can write like that: defaultColor="yellow"-->
       </ng-template>
     </div>
   </div>
